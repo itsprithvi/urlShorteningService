@@ -101,7 +101,7 @@
         <h3>URL Shortener System</h3>
         <form id="urlForm" action="" method="post">
             <label for="originalLink">Original Link:</label>
-            <input id="originalLink" type="text" name="originalLink">
+            <input id="originalLink" type="text" name="originalLink" required>
             <br>
             <label for="customLink">Custom Link:</label>
             <input id="customLink" type="text" name="customLink">
