@@ -110,7 +110,7 @@
                 <button type="submit">Shorten</button>
             </div>
         </form>
-        <div><a href="http://localhost:8080/home/${shortLink}" target="_blank"><span id="shortLink">${shortLink}</span></a></div>
+        <div><a href="http://localhost:8080/${shortLink}" target="_blank"><span id="shortLink">${shortLink}</span></a></div>
         <div class="database-link"><a href="http://localhost:8080/h2-console" target="_blank">Database</a></div>
     </div>
 </body>
