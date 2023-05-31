@@ -29,12 +29,12 @@ public class UrlShorteningController {
     @Autowired
     private UrlService urlService;
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String home() {
         return "home";
     }
 
-    @PostMapping("/home")
+    @PostMapping("/")
     public String homePost(
             @RequestParam("originalLink") String url,
             @RequestParam(value = "customLink", required = false) String customLink,
@@ -91,7 +91,7 @@ public class UrlShorteningController {
         return new ResponseEntity<>(urlErrorResponseDto, HttpStatus.OK);
     }
 
-    @GetMapping("/home/{shortLink}")
+    @GetMapping("/{shortLink}")
     public ResponseEntity<?> redirectToOriginalUrl(@PathVariable String shortLink, HttpServletResponse response)
             throws IOException {
 
